@@ -1,0 +1,96 @@
+<!--
+ Quara Theme by OllieJW (https://olliejw.me)
+ License - https://olliejw.me/tos
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="img/favicon.png">
+  <title>API | MomentariyModder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="title" content="MomentariyModder">
+  <meta name="description" content="Hi, this is the official website of MomentariyModder!">
+  <meta name="keywords" content="Minecraft, Mods, MomentariyModder">
+  <meta name="theme-color" content="#4bb4f1">
+
+  <!-- Edit this to change staff cards! -->
+
+  <!--
+	Notice:
+	When you make changes to config,
+	add ?v and a random number to config.css/js
+	Example: <link rel="stylesheet" href="config.css?v=100">
+  -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="config.js"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script src="https://donorbox.org/widget.js" paypalExpress="false"></script>
+  <script type="text/javascript" src="js/lang/home.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="config.css">
+  <link href="css/lightbox.css" rel="stylesheet" media="all">
+
+</head>
+
+<body>
+
+  <div id="target"></div>
+
+  <script id="template" type="text/x-handlebars-template">
+
+  <header>
+    <div class="hero" id="hero">
+      <a href="#!"><h1 style="padding-top: 3%;"><img class="locked" src="img/logo.png" width="50%"></h1></a>
+    <p> </p>
+	<!-- <div class="news-card" align="center">
+      <a href="#" id="en" class="translate btn">🇬🇧 English</a>
+      <a href="#" id="ru" class="translate btn">🇷🇺 Русский</a>
+    </div>
+	<p> </p> -->
+    <div class="news-card" align="center">
+      <a href="wiki.html" class="btn"><i class="fa-solid fa-book"></i> <f class="lang" key="wiki">Wiki</f></a>
+      <a href="#aboutme" class="btn"><i class="fa-solid fa-circle-info"></i> <f class="lang" key="about">Information</f></a>
+      <a href="#projects" class="btn"><i class="fa-solid fa-list-ul"></i> <f class="lang" key="projects">Projects</f></a>
+	  <a href="#gallery" class="btn"><i class="fa-solid fa-camera"></i> <f class="lang" key="gallery">Gallery</f></a>
+	  <a href="#news2" class="btn"><i class="fa-solid fa-newspaper"></i> <f class="lang" key="news">News</f></a>
+	  <a href="#links" class="btn"><i class="fa-solid fa-share"></i> <f class="lang" key="links">Links</f></a>
+    </div>
+	<p> </p>
+	</div>
+  </header>
+  
+  <section class="dark" id="aboutme">
+	<h1><f class="lang" key="api">API</f></h1>
+  </section>
+  
+  <section class="light">
+    <h1><i class="fa-solid fa-share"></i> <f class="lang" key="links">Links</f></h1>
+    <div id="links" align="center">
+	  <a href="https://discord.com/invite/9XqgjRd"><img title="Discord" src="img/links/discord.png" alt="Discord" width="5%" /></a> 
+	  <a href="https://twitter.com/momentariymoder"><img title="X/Twitter" src="img/links/x.png" alt="X/Twitter" width="5%" /></a>	 
+	  <a href="https://www.curseforge.com/members/momentariymodder"><img title="CurseForge" src="img/links/curseforge.png" alt="CurseForge" width="5%" /></a> 
+	  <a href="https://modrinth.com/user/momentariymodder"><img title="Modrinth" src="img/links/Modrinth.png" alt="Modrinth" width="5%" /></a> 
+	  <a href="https://github.com/MomentariyModder"><img title="GitHub" src="img/links/GitHub.png" alt="GitHub" width="5%" /></a>
+	  <a href="https://patreon.com/momentariymodder"><img title="Patreon" src="img/links/patreon.png" alt="Patreon" width="5%" /></a>
+	  <a href="https://boosty.to/momentariymodder"><img title="Boosty" src="img/links/boosty.png" alt="Boosty" width="5%" /></a>
+	  <a href="https://ko-fi.com/momentariymodder"><img title="Ko-fi" src="img/links/ko-fi.png" alt="Ko-fi" width="5%" /></a>
+    </div>
+  </section>
+  
+  
+  <footer>
+    <a>&copy; 2019-2023 {{server_name}}. <f class="lang" key="footer1">All Rights Reserved.</f></br>{{server_name}} <f class="lang" key="footer2">is not affiliated with Mojang Studios, nor are its projects official Minecraft projects.</f><br>{{server_ip}}</a>
+	<a></a>
+	<img class="locked" src="img/favicon.png" style="height:4em">
+  </footer>
+  </script>
+  
+</body>
+</html>
